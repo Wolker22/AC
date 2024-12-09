@@ -1,0 +1,16 @@
+$
+PC+1->PC:t1
+PC->MAR:t0
+GPR(AD)->MAR:t2
+GPR->M:t4·q3
+QR->M:t3·q4
+GPR(OP)->OPR:t2
+M->GPR:t1 + t3·q1
+ACC->GPR:t3·q3
+0->ACC:t3·q1
+M->QR:t3·q2
+GPR+ACC->ACC:t4·q1
+$
+SR+1->SR:t0 + t1 + t2 + t3·q1 + t3·q3
+LOAD SR:t4·q1-0 + t3·q2-0 + t4·q3-0 + t3·q4-0
+$
